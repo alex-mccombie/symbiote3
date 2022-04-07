@@ -1,0 +1,60 @@
+/* Ridershelf list/table */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-body {
+/*  background: repeat scroll 0 0; */
+}
+
+.table-head-item {
+  padding: 6px 4px;
+  width: 20%;
+  font-size: 12px;
+  font-weight: 500;
+  color: #000;
+  background-color:#AAF;  
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.table-row{
+  vertical-align: middle;
+}
+
+.table-row:nth-child(even) {
+  background:#DDD none repeat scroll 0 0;
+}
+
+.table-item {
+  overflow: hidden;
+  padding: 0px;
+  font-size: 14px;
+  text-align: right;
+  text-overflow: ellipsis;
+  white-space:nowrap;
+  column-width:10px
+}
+
+.table-cell {
+  overflow: hidden;
+  padding: 1px;
+  font-size: 12px;
+  text-align: right;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  column-width: 5%
+}
+
+
+.table-head-item:not(:first-child):not(:last-child),
+.table-item:not(:first-child):not(:last-child) {
+  text-align: left;
+}
+
+.table-row--active {
+  font-size: 20px;
+  color: #fff;
+  background: #4990e2;
+}
